@@ -1,0 +1,82 @@
+<style>
+  .subscribe-button {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 105px;
+    border-radius: 2px;
+    cursor: pointer; 
+    margin-right: 8px;
+    /* smooth渐变 */
+    transition: opacity 0.15s;
+  }
+
+  .subscribe-button:hover {
+    /* background-color: green; */
+    /* fadeout */
+    opacity: 0.8; 
+  }
+
+  .subscribe-button:active {
+    /* background-color: blue; */
+    opacity: 0.5; 
+  }
+
+  .join-button {
+    background-color: white;
+    border-color: rgb(41, 128, 211);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(41, 128, 211);
+    height: 36px;
+    width: 62px;
+    border-radius: 2px;
+    cursor: pointer;
+    /* 不能把渐变效果放在hover里，否则只在hover的时候才有这个效果 */
+    transition: background-color 0.15s, 
+      color 0.15s;
+  }
+
+  .join-button:hover {
+    background-color: rgb(41, 128, 211);
+    color: white;
+  }
+
+  .join-button:active {
+    opacity: 0.7;
+  }
+
+  .tweet-button {
+    background-color: rgb(2, 158, 255);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 74px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+  }
+
+  .tweet-button:hover {
+    /* horizontal、vertical、blur、color */
+    /* rgba:a means opacity */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.16);
+
+  }
+</style>
+
+
+
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+<button class="join-button">
+  JOIN
+</button>
+<button class="tweet-button">
+  Tweet
+</button>
